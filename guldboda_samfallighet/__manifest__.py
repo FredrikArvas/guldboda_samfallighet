@@ -1,6 +1,6 @@
 {
     'name': 'Guldboda Samfallighet',
-    'version': '19.0.1.0.0',
+    'version': '18.0.1.0.0',
     'summary': 'Installationsprofil for Guldboda Samfallighet',
     'category': 'Hidden',
     'author': 'Fredrik Arvas / Arvas International AB',

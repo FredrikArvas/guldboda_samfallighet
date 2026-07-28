@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <delete model="website.menu" search="[('url','=','/contactus'),('website_id','=',1)]"/>
+  </data>
+
+  <data noupdate="1">
+
+    <record id="gsf_jubileum_top_menu_root" model="website.menu">
+      <field name="name">Top Menu for Website 1</field>
+      <field name="url">#</field>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">0</field>
+    </record>
+
+    <record id="gsf_jubileum_menu_home" model="website.menu">
+      <field name="name">Hem</field>
+      <field name="url">/</field>
+      <field name="parent_id" ref="gsf_jubileum_top_menu_root"/>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">1</field>
+    </record>
+
+    <record id="gsf_jubileum_menu_guldboda" model="website.menu">
+      <field name="name">guldboda.se</field>
+      <field name="url">https://guldboda.se</field>
+      <field name="new_window">True</field>
+      <field name="parent_id" ref="gsf_jubileum_top_menu_root"/>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">50</field>
+    </record>
+
+    <record id="gsf_jubileum_menu_login" model="website.menu">
+      <field name="name">Logga in</field>
+      <field name="url">/web/login</field>
+      <field name="parent_id" ref="gsf_jubileum_top_menu_root"/>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">90</field>
+    </record>
+
+  </data>
+</odoo>

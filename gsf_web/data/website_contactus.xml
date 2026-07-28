@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="gsf_contactus_info" inherit_id="website.contactus" name="GSF — Kontakta oss">
+
+    <!-- Hero -->
+    <xpath expr="//section[hasclass('s_title')]" position="replace">
+      <section style="background: #192A3D; padding: 48px 0;">
+        <div class="container text-center">
+          <h1 style="color: #FFFFFF; margin: 0;">Kontakta oss</h1>
+        </div>
+      </section>
+    </xpath>
+
+    <!-- Bakgrund -->
+    <xpath expr="//section[hasclass('s_text_block')]" position="attributes">
+      <attribute name="style">background: #FAFBFC;</attribute>
+    </xpath>
+
+    <!-- Kontaktuppgifter -->
+    <xpath expr="//div[hasclass('col-lg-4')][hasclass('offset-lg-1')]" position="replace">
+      <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0">
+        <h5 style="color: #192A3D; border-bottom: 2px solid #1559ED; padding-bottom: 8px; margin-bottom: 12px;">
+          Guldboda Samfällighetsförening
+        </h5>
+        <ul class="list-unstyled mb-0 ps-2" style="color: #3A4F66;">
+          <li class="mb-2">
+            <i class="fa fa-map-marker fa-fw me-2" style="color: #1559ED;"/>
+            <span>c/o Franzéns Redovisningsbyrå, 134 34 Gustavsberg</span>
+          </li>
+          <li class="mb-2">
+            <i class="fa fa-envelope fa-fw me-2" style="color: #1559ED;"/>
+            <a href="mailto:info@guldboda.se" style="color: #3A4F66;">info@guldboda.se</a>
+          </li>
+          <li class="mb-2">
+            <i class="fa fa-envelope fa-fw me-2" style="color: #1559ED;"/>
+            <a href="mailto:kassor@guldboda.se" style="color: #3A4F66;">kassor@guldboda.se</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope fa-fw me-2" style="color: #1559ED;"/>
+            <a href="mailto:styrelsen@guldboda.se" style="color: #3A4F66;">styrelsen@guldboda.se</a>
+          </li>
+        </ul>
+      </div>
+    </xpath>
+
+  </template>
+
+</odoo>

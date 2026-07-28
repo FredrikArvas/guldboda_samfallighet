@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Ta bort Odoos auto-kopierade Kontakta oss som hamnar som dubblett -->
+  <data>
+    <delete model="website.menu" search="[('url','=','/contactus'),('website_id','=',1)]"/>
+  </data>
+
+  <data noupdate="1">
+
+    <record id="gsf_top_menu_root" model="website.menu">
+      <field name="name">Top Menu for Website 1</field>
+      <field name="url">#</field>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">0</field>
+    </record>
+
+    <record id="gsf_menu_home" model="website.menu">
+      <field name="name">Hem</field>
+      <field name="url">/</field>
+      <field name="parent_id" ref="gsf_top_menu_root"/>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">1</field>
+    </record>
+
+    <record id="gsf_menu_styrelsen" model="website.menu">
+      <field name="name">Styrelsen &amp; Kontakt</field>
+      <field name="url">/styrelsen</field>
+      <field name="parent_id" ref="gsf_top_menu_root"/>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">20</field>
+    </record>
+
+    <record id="gsf_menu_contact" model="website.menu">
+      <field name="name">Kontakta oss</field>
+      <field name="url">/contactus</field>
+      <field name="parent_id" ref="gsf_top_menu_root"/>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">90</field>
+    </record>
+
+  </data>
+</odoo>

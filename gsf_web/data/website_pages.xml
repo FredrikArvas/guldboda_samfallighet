@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="0">
+
+    <!-- ===== STARTSIDA ===== -->
+    <record id="view_gsf_home" model="ir.ui.view">
+      <field name="name">gsf.home</field>
+      <field name="type">qweb</field>
+      <field name="key">gsf_web.view_gsf_home</field>
+      <field name="arch" type="xml">
+        <t t-name="gsf_web.view_gsf_home">
+          <t t-call="website.layout">
+            <div id="wrap">
+
+              <style>
+                .gsf-bg       { background-color: #FAFBFC; }
+                .gsf-bg-alt   { background-color: #F2F5F7; }
+                .gsf-navy     { color: #192A3D; }
+                .gsf-text     { color: #3A4F66; line-height: 1.8; }
+                .gsf-blue     { color: #1559ED; }
+                .gsf-divider  { border-top: 2px solid #1559ED; width: 60px; margin: 1rem auto 1.5rem; }
+                .gsf-card     { background: #FFFFFF; border: 1px solid #E2E8EF; border-radius: 6px; transition: box-shadow .2s; }
+                .gsf-card:hover { box-shadow: 0 4px 20px rgba(21,89,237,.10); }
+                .gsf-label    { font-size: .75rem; text-transform: uppercase; letter-spacing: .07em; color: #1559ED; font-weight: 600; }
+              </style>
+
+              <!-- Hero -->
+              <section style="background: #192A3D; padding: 64px 0 56px;">
+                <div class="container text-center">
+                  <h1 class="fw-bold mb-3" style="color: #FFFFFF; font-size: 2rem;">
+                    Välkommen till Guldboda Samfällighetsförening
+                  </h1>
+                  <p style="color: #A8BFDA; font-size: 1.1rem; max-width: 620px; margin: 0 auto 1.5rem;">
+                    Vägföreningen för Guldbodaområdet på södra Muskö
+                  </p>
+                  <a href="/styrelsen" class="btn btn-lg px-5 py-2"
+                     style="background: #1559ED; color: #FFFFFF; font-weight: 600; border-radius: 4px; border: none;">
+                    Styrelsen &amp; Kontakt
+                  </a>
+                </div>
+              </section>
+
+              <!-- Om föreningen -->
+              <section class="gsf-bg py-5">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <h2 class="h4 fw-bold mb-2 gsf-navy">Om föreningen</h2>
+                      <div class="gsf-divider"></div>
+                      <p class="gsf-text">
+                        Guldboda Samfällighetsförening är en vägförening som förvaltar och underhåller
+                        vägarna inom Guldbodaområdet på södra Muskö. Föreningen säkerställer att
+                        vägnätet håller god standard och hanterar gemensamma frågor som rör
+                        vägunderhåll, inspektioner och driftkostnader för de fastigheter
+                        som ingår i samfälligheten.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Tre informationsblock -->
+              <section class="gsf-bg-alt py-5">
+                <div class="container">
+                  <div class="row g-4">
+
+                    <div class="col-md-4">
+                      <div class="gsf-card p-4 h-100">
+                        <div class="gsf-label mb-2">Medlemmar</div>
+                        <h5 class="fw-bold gsf-navy mb-3">Ägarskifte eller ny adress?</h5>
+                        <p class="gsf-text small mb-3">
+                          Vid ägarbyte eller adressändring — kontakta kassören så att
+                          medlemsregistret hålls uppdaterat.
+                        </p>
+                        <a href="mailto:kassor@guldboda.se" class="gsf-blue" style="font-weight: 600;">
+                          kassor@guldboda.se →
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="gsf-card p-4 h-100">
+                        <div class="gsf-label mb-2">Slitageavgifter</div>
+                        <h5 class="fw-bold gsf-navy mb-3">Ska du bygga?</h5>
+                        <p class="gsf-text small mb-3">
+                          Vid byggnation som belastar vägarna tillkommer slitageavgifter.
+                          Kontakta vägansvarig i god tid innan arbetet påbörjas.
+                        </p>
+                        <a href="mailto:vagansvarig@guldboda.se" class="gsf-blue" style="font-weight: 600;">
+                          vagansvarig@guldboda.se →
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="gsf-card p-4 h-100">
+                        <div class="gsf-label mb-2">Styrelsen</div>
+                        <h5 class="fw-bold gsf-navy mb-3">Frågor och ärenden</h5>
+                        <p class="gsf-text small mb-3">
+                          Allmänna frågor besvaras av styrelsen. Vi strävar efter att
+                          svara inom några dagar.
+                        </p>
+                        <a href="mailto:styrelsen@guldboda.se" class="gsf-blue" style="font-weight: 600;">
+                          styrelsen@guldboda.se →
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+
+              <!-- CTA -->
+              <section class="gsf-bg py-5 text-center">
+                <div class="container">
+                  <h2 class="h4 fw-bold gsf-navy mb-2">Vill du nå styrelsen?</h2>
+                  <p class="gsf-text mb-4">Se kontaktuppgifter och roller för samtliga ledamöter.</p>
+                  <a href="/styrelsen" class="btn px-5 py-2"
+                     style="background: #192A3D; color: #FFFFFF; font-weight: 600; border-radius: 4px; border: none;">
+                    Styrelsen &amp; Kontakt
+                  </a>
+                </div>
+              </section>
+
+            </div>
+          </t>
+        </t>
+      </field>
+    </record>
+
+    <record id="page_gsf_home" model="website.page">
+      <field name="view_id" ref="view_gsf_home"/>
+      <field name="url">/</field>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="is_published" eval="True"/>
+    </record>
+
+    <!-- ===== STYRELSEN ===== -->
+    <record id="view_gsf_styrelsen" model="ir.ui.view">
+      <field name="name">gsf.styrelsen</field>
+      <field name="type">qweb</field>
+      <field name="key">gsf_web.view_gsf_styrelsen</field>
+      <field name="arch" type="xml">
+        <t t-name="gsf_web.view_gsf_styrelsen">
+          <t t-call="website.layout">
+            <div id="wrap">
+
+              <style>
+                .gsf-bg      { background-color: #FAFBFC; }
+                .gsf-bg-alt  { background-color: #F2F5F7; }
+                .gsf-navy    { color: #192A3D; }
+                .gsf-text    { color: #3A4F66; line-height: 1.8; }
+                .gsf-blue    { color: #1559ED; }
+                .gsf-divider { border-top: 2px solid #1559ED; width: 60px; margin: 1rem 0 1.5rem; }
+                .gsf-member  { background: #FFFFFF; border: 1px solid #E2E8EF; border-radius: 6px; padding: 1.25rem 1.5rem; }
+                .gsf-role    { font-size: .75rem; text-transform: uppercase; letter-spacing: .07em; color: #1559ED; font-weight: 600; }
+              </style>
+
+              <!-- Hero -->
+              <section style="background: #192A3D; padding: 48px 0;">
+                <div class="container text-center">
+                  <h1 class="fw-bold mb-0" style="color: #FFFFFF;">Styrelsen &amp; Kontakt</h1>
+                </div>
+              </section>
+
+              <!-- Styrelselista -->
+              <section class="gsf-bg py-5">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                      <h2 class="h4 fw-bold gsf-navy mb-2">Styrelsen 2025–2026</h2>
+                      <div class="gsf-divider"></div>
+
+                      <div class="d-flex flex-column gap-3 mt-4">
+
+                        <div class="gsf-member">
+                          <div class="gsf-role mb-1">Ordförande</div>
+                          <div class="fw-bold gsf-navy mb-1">Fredrik Arvas</div>
+                          <div class="gsf-text small">
+                            <a href="tel:+46708145595" class="gsf-blue me-3">070 814 55 95</a>
+                            <a href="mailto:ordforande@guldboda.se" class="gsf-blue">ordforande@guldboda.se</a>
+                          </div>
+                        </div>
+
+                        <div class="gsf-member">
+                          <div class="gsf-role mb-1">Sekreterare</div>
+                          <div class="fw-bold gsf-navy mb-1">Malin Eklund</div>
+                          <div class="gsf-text small">
+                            <a href="tel:+46736001767" class="gsf-blue me-3">073 600 17 67</a>
+                            <a href="mailto:sekreterare@guldboda.se" class="gsf-blue">sekreterare@guldboda.se</a>
+                          </div>
+                        </div>
+
+                        <div class="gsf-member">
+                          <div class="gsf-role mb-1">Kassör</div>
+                          <div class="fw-bold gsf-navy mb-1">Catja Nygren</div>
+                          <div class="gsf-text small">
+                            <a href="mailto:kassor@guldboda.se" class="gsf-blue">kassor@guldboda.se</a>
+                          </div>
+                        </div>
+
+                        <div class="gsf-member">
+                          <div class="gsf-role mb-1">Vägfrågor</div>
+                          <div class="fw-bold gsf-navy mb-1">Göran Gerth</div>
+                          <div class="gsf-text small">
+                            <a href="tel:+46705861715" class="gsf-blue me-3">070 586 17 15</a>
+                            <a href="mailto:vagansvarig@guldboda.se" class="gsf-blue">vagansvarig@guldboda.se</a>
+                          </div>
+                        </div>
+
+                        <div class="gsf-member">
+                          <div class="gsf-role mb-1">Ledamot</div>
+                          <div class="fw-bold gsf-navy mb-1">Christian Berggren</div>
+                          <div class="gsf-text small">
+                            <a href="tel:+46736569346" class="gsf-blue me-3">073 656 93 46</a>
+                            <a href="mailto:christian@guldboda.se" class="gsf-blue">christian@guldboda.se</a>
+                          </div>
+                        </div>
+
+                        <div class="gsf-member">
+                          <div class="gsf-role mb-1">Ledamot</div>
+                          <div class="fw-bold gsf-navy mb-1">Henrik Engqvist</div>
+                          <div class="gsf-text small">
+                            <a href="tel:+46702088801" class="gsf-blue me-3">070 208 88 01</a>
+                            <a href="mailto:henrik@guldboda.se" class="gsf-blue">henrik@guldboda.se</a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Allmän kontakt -->
+              <section class="gsf-bg-alt py-5">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <h3 class="h5 fw-bold gsf-navy mb-3">Allmänna kontaktadresser</h3>
+                      <ul class="list-unstyled gsf-text">
+                        <li class="mb-2">
+                          <strong class="gsf-navy">Hela styrelsen:</strong>
+                          <a href="mailto:styrelsen@guldboda.se" class="gsf-blue ms-2">styrelsen@guldboda.se</a>
+                        </li>
+                        <li class="mb-2">
+                          <strong class="gsf-navy">Information (ordförande &amp; kassör):</strong>
+                          <a href="mailto:info@guldboda.se" class="gsf-blue ms-2">info@guldboda.se</a>
+                        </li>
+                      </ul>
+                      <div class="mt-4">
+                        <a href="/contactus" class="btn px-4 py-2"
+                           style="background: #1559ED; color: #FFFFFF; font-weight: 600; border-radius: 4px; border: none;">
+                          Skicka meddelande via formuläret
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+          </t>
+        </t>
+      </field>
+    </record>
+
+    <record id="page_gsf_styrelsen" model="website.page">
+      <field name="view_id" ref="view_gsf_styrelsen"/>
+      <field name="url">/styrelsen</field>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="is_published" eval="True"/>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data noupdate="0">
+
+    <record id="view_gsf_jubileum_home" model="ir.ui.view">
+      <field name="name">gsf.jubileum.home</field>
+      <field name="type">qweb</field>
+      <field name="key">gsf_web_jubileum.view_gsf_jubileum_home</field>
+      <field name="arch" type="xml">
+        <t t-name="gsf_web_jubileum.view_gsf_jubileum_home">
+          <t t-call="website.layout">
+            <div id="wrap">
+
+              <style>
+                .gsf-bg      { background-color: #FAFBFC; }
+                .gsf-bg-alt  { background-color: #F2F5F7; }
+                .gsf-navy    { color: #192A3D; }
+                .gsf-text    { color: #3A4F66; line-height: 1.85; }
+                .gsf-blue    { color: #1559ED; }
+                .gsf-divider { border-top: 2px solid #1559ED; width: 60px; margin: 1rem 0 1.5rem; }
+              </style>
+
+              <!-- Hero -->
+              <section style="background: #192A3D; padding: 56px 0 48px;">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <h1 class="fw-bold mb-0" style="color: #FFFFFF; font-size: 1.9rem; line-height: 1.3;">
+                        Guldboda 80 år — hjälp oss samla fastigheternas historia
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Huvudtext -->
+              <section class="gsf-bg py-5">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                      <p class="gsf-text">
+                        Nästa år fyller Guldboda 80 år, och det ska firas med en jubileumsskrift
+                        som GTFF gör under ledning av Roland Berndt. En viktig del blir berättelserna
+                        om de olika fastigheterna — vem som bodde här, vilka minnen som hör till
+                        just er tomt.
+                      </p>
+
+                      <p class="gsf-text">
+                        Alla fastighetsägare har fått ett mejl med några frågor: om huset, vilka
+                        som bott där, musik, lekar, spel och sådant som gjort just er plats speciell.
+                        Ni väljer själva hur ni vill svara — skriftligt, i ett samtal, eller genom
+                        ett enkelt digitalt samtalsstöd. Länken i mejlet tar er direkt dit.
+                      </p>
+
+                      <p class="gsf-text">
+                        Hittar ni inte mejlet? Klicka på
+                        <a href="/web/login" class="gsf-blue fw-semibold">Logga in</a>
+                        och begär ett nytt lösenord med er mejladress, så kommer ni en magisk länk
+                        och kan logga in.
+                      </p>
+
+                      <p class="gsf-text mb-0">Frågor eller hellre prata direkt med mig — hör av er!</p>
+
+                      <div class="mt-4 pt-3" style="border-top: 1px solid #E2E8EF;">
+                        <p class="mb-1 fw-semibold gsf-navy">Fredrik Arvas</p>
+                        <p class="gsf-text small mb-1">Ordförande, GSF</p>
+                        <p class="gsf-text small mb-0">
+                          <a href="mailto:fredrik@arvas.se" class="gsf-blue">fredrik@arvas.se</a>
+                          &#160;/&#160;
+                          <a href="tel:+46708145595" class="gsf-blue">070-814 55 95</a>
+                        </p>
+                      </div>
+
+                      <div class="mt-5 d-flex gap-3 flex-wrap">
+                        <a href="/web/login" class="btn btn-lg px-5 py-2"
+                           style="background:#1559ED;color:#FFFFFF;font-weight:600;border-radius:4px;border:none;">
+                          Logga in
+                        </a>
+                        <a href="https://guldboda.se" target="_blank" class="btn btn-lg px-4 py-2"
+                           style="background:#F2F5F7;color:#192A3D;font-weight:600;border-radius:4px;border:1px solid #C8D5E0;">
+                          guldboda.se →
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+          </t>
+        </t>
+      </field>
+    </record>
+
+    <record id="page_gsf_jubileum_home" model="website.page">
+      <field name="view_id" ref="view_gsf_jubileum_home"/>
+      <field name="url">/</field>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="is_published" eval="True"/>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <!-- Om oss-kolumn -->
+  <template id="gsf_footer_about" inherit_id="website.footer_custom" name="GSF Footer — Om oss">
+    <xpath expr="//div[hasclass('col-lg-5')][hasclass('pt24')]" position="replace">
+      <div class="col-lg-5 pt24 pb24">
+        <h5>Om föreningen</h5>
+        <p>Guldboda Samfällighetsförening förvaltar och underhåller vägarna
+           inom Guldbodaområdet på södra Muskö.</p>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Kontaktinfo-kolumn -->
+  <template id="gsf_footer_contact" inherit_id="website.footer_custom" name="GSF Footer — Kontakt">
+    <xpath expr="//div[hasclass('col-lg-4')][hasclass('offset-lg-1')]" position="replace">
+      <div class="col-lg-4 offset-lg-1 pt24 pb24">
+        <h5>Kontakt</h5>
+        <ul class="list-unstyled">
+          <li>
+            <i class="fa fa-building fa-fw me-2"/>
+            Guldboda Samfällighetsförening
+          </li>
+          <li>
+            <i class="fa fa-map-marker fa-fw me-2"/>
+            c/o Franzéns Redovisningsbyrå, 134 34 Gustavsberg
+          </li>
+          <li>
+            <i class="fa fa-envelope fa-fw me-2"/>
+            <a href="mailto:info@guldboda.se">info@guldboda.se</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope fa-fw me-2"/>
+            <a href="mailto:kassor@guldboda.se">kassor@guldboda.se</a>
+          </li>
+        </ul>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Länk-kolumn -->
+  <template id="gsf_footer_links" inherit_id="website.footer_custom" name="GSF Footer — Länkar">
+    <xpath expr="//div[hasclass('col-lg-2')][hasclass('pt24')]" position="replace">
+      <div class="col-lg-2 pt24 pb24">
+        <h5>Sidor</h5>
+        <ul class="list-unstyled">
+          <li><a href="/">Hem</a></li>
+          <li><a href="/styrelsen">Styrelsen &amp; Kontakt</a></li>
+          <li><a href="/contactus">Kontakta oss</a></li>
+        </ul>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- Copyright -->
+  <template id="gsf_footer_copyright" inherit_id="website.layout" name="GSF Copyright" priority="20">
+    <xpath expr="//footer//span[hasclass('o_footer_copyright_name')]" position="replace">
+      <span class="o_footer_copyright_name me-2 small">
+        Copyright &#169; Guldboda Samfällighetsförening
+      </span>
+    </xpath>
+  </template>
+
+  <!-- Powered by -->
+  <template id="gsf_brand_promotion" inherit_id="web.brand_promotion" name="GSF Brand Promotion" priority="25">
+    <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace">
+      <div class="o_brand_promotion">
+        <small class="text-muted">Powered by <a target="_blank" href="https://www.odoo.com/page/community">Odoo Community</a></small>
+      </div>
+    </xpath>
+  </template>
+
+</odoo>

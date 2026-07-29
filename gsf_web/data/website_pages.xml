@@ -298,13 +298,13 @@
                 <div class="container text-center">
                   <p style="color: #A8BFDA; font-size: 13px; text-transform: uppercase;
                             letter-spacing: .07em; margin-bottom: 8px;">
-                    Guldboda Samfallighetsforening
+                    Guldboda Samfällighetsförening
                   </p>
                   <h1 class="fw-bold mb-3" style="color: #FFFFFF; font-size: 2rem;">
-                    Guldboda 80 ar
+                    Guldboda 80 år
                   </h1>
                   <p style="color: #A8BFDA; font-size: 1.1rem; max-width: 560px; margin: 0 auto;">
-                    Dela din familjs berattelse om livet vid Musko
+                    Dela din familjs berättelse om livet vid Muskö
                   </p>
                 </div>
               </section>
@@ -314,32 +314,32 @@
                 <div class="container">
                   <div class="row justify-content-center">
                     <div class="col-lg-7 text-center">
-                      <h2 class="h4 fw-bold gsf-navy mb-2">Dela din berattelse</h2>
+                      <h2 class="h4 fw-bold gsf-navy mb-2">Dela din berättelse</h2>
                       <div class="gsf-divider"></div>
                       <p class="gsf-text">
-                        Guldboda Samfallighetsforening fyller 80 ar. Vi samlar in berattelser fran
-                        fastighetsagare om livet vid Musko — minnen, traditioner och det som gjort
-                        platsen till nagot alldeles eget. Berattelserna samlas i en jubileumsskrift
+                        Guldboda Samfällighetsförening fyller 80 år. Vi samlar in berättelser från
+                        fastighetsägare om livet vid Muskö — minnen, traditioner och det som gjort
+                        platsen till något alldeles eget. Berättelserna samlas i en jubileumsskrift
                         som Roland Berndt och Fredrik Arvas redigerar tillsammans.
                       </p>
                       <p class="gsf-text">
-                        Alla fastighetsagare bjuds in via e-post med en personlig lank till ett
-                        samtal med Clio, var AI-assistent. Det tar bara nagra minuter och du kan
-                        pausa och fortsatta nar du vill.
-                      </p>
+                        Alla fastighetsägare bjuds in via e-post med en personlig länk till ett
+                        samtal med Clio, vår AI-assistent. Det tar bara några minuter och du kan
+                        pausa och fortsätta när du vill.
+      </p>
                     </div>
                   </div>
                 </div>
               </section>
 
-              <!-- Har du tappat din lank -->
+              <!-- Har du tappat din länk -->
               <section class="gsf-bg-alt py-5">
                 <div class="container">
                   <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
                       <h3 class="h5 fw-bold gsf-navy mb-3">Har du tappat bort din inbjudan?</h3>
                       <p class="gsf-text mb-4">
-                        Fyll i din e-postadress sa skickar vi din personliga lank pa nytt.
+                        Fyll i din e-postadress så skickar vi din personliga länk på nytt.
                       </p>
                       <a href="/jubileum/hamta-lank"
                          class="btn btn-lg px-5 py-2"

@@ -38,5 +38,14 @@
       <field name="sequence">90</field>
     </record>
 
+
+    <record id="gsf_menu_jubileum" model="website.menu">
+      <field name="name">80 år</field>
+      <field name="url">/jubileum</field>
+      <field name="parent_id" ref="gsf_top_menu_root"/>
+      <field name="website_id" ref="website.default_website"/>
+      <field name="sequence">50</field>
+    </record>
+
   </data>
 </odoo>

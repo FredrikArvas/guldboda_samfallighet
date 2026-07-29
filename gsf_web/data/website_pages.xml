@@ -13,112 +13,43 @@
             <div id="wrap">
 
               <style>
-                .gsf-bg       { background-color: #FAFBFC; }
-                .gsf-bg-alt   { background-color: #F2F5F7; }
-                .gsf-navy     { color: #192A3D; }
-                .gsf-text     { color: #3A4F66; line-height: 1.8; }
-                .gsf-blue     { color: #1559ED; }
-                .gsf-divider  { border-top: 2px solid #1559ED; width: 60px; margin: 1rem auto 1.5rem; }
-                .gsf-card     { background: #FFFFFF; border: 1px solid #E2E8EF; border-radius: 6px; transition: box-shadow .2s; }
-                .gsf-card:hover { box-shadow: 0 4px 20px rgba(21,89,237,.10); }
-                .gsf-label    { font-size: .75rem; text-transform: uppercase; letter-spacing: .07em; color: #1559ED; font-weight: 600; }
+                .gsf-navy  { color: #192A3D; }
+                .gsf-text  { color: #3A4F66; line-height: 1.8; }
+                .gsf-blue  { color: #1559ED; }
               </style>
 
-              <!-- Hero -->
-              <section style="background: #192A3D; padding: 64px 0 56px;">
+              <section style="background: #192A3D; padding: 48px 0 40px;">
                 <div class="container text-center">
-                  <h1 class="fw-bold mb-3" style="color: #FFFFFF; font-size: 2rem;">
-                    Välkommen till Guldboda Samfällighetsförening
-                  </h1>
-                  <p style="color: #A8BFDA; font-size: 1.1rem; max-width: 620px; margin: 0 auto 1.5rem;">
-                    Vägföreningen för Guldbodaområdet på södra Muskö
+                  <p style="color: #A8BFDA; font-size: 13px; text-transform: uppercase;
+                            letter-spacing: .07em; margin-bottom: 8px;">
+                    Guldboda Samfällighetsförening
                   </p>
-                  <a href="/styrelsen" class="btn btn-lg px-5 py-2"
-                     style="background: #1559ED; color: #FFFFFF; font-weight: 600; border-radius: 4px; border: none;">
-                    Styrelsen &amp; Kontakt
-                  </a>
+                  <h1 class="fw-bold mb-2" style="color: #FFFFFF; font-size: 1.6rem;">
+                    Administrativt stöd för styrelsen
+                  </h1>
+                  <p style="color: #A8BFDA; max-width: 520px; margin: 0 auto;">
+                    Den här webbplatsen används internt av styrelsen för föreningens löpande arbete.
+                  </p>
                 </div>
               </section>
 
-              <!-- Om föreningen -->
-              <section class="gsf-bg py-5">
+              <section style="background: #FAFBFC; padding: 48px 0;">
                 <div class="container">
                   <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                      <h2 class="h4 fw-bold mb-2 gsf-navy">Om föreningen</h2>
-                      <div class="gsf-divider"></div>
-                      <p class="gsf-text">
-                        Guldboda Samfällighetsförening är en vägförening som förvaltar och underhåller
-                        vägarna inom Guldbodaområdet på södra Muskö. Föreningen säkerställer att
-                        vägnätet håller god standard och hanterar gemensamma frågor som rör
-                        vägunderhåll, inspektioner och driftkostnader för de fastigheter
-                        som ingår i samfälligheten.
+                    <div class="col-lg-6 text-center">
+                      <h2 class="h5 fw-bold gsf-navy mb-3">Guldboda 80 år — dela din berättelse</h2>
+                      <p class="gsf-text mb-4">
+                        Är du fastighetsägare och vill bidra till jubileumsskriften?
+                        Alla inbjudna ägare hittar sitt personliga samtal med Clio på jubileumssidan.
                       </p>
+                      <a href="/jubileum"
+                         class="btn btn-lg px-5 py-2"
+                         style="background: #1559ED; color: #FFFFFF; font-weight: 600;
+                                border-radius: 4px; border: none;">
+                        Till jubileumssidan →
+                      </a>
                     </div>
                   </div>
-                </div>
-              </section>
-
-              <!-- Tre informationsblock -->
-              <section class="gsf-bg-alt py-5">
-                <div class="container">
-                  <div class="row g-4">
-
-                    <div class="col-md-4">
-                      <div class="gsf-card p-4 h-100">
-                        <div class="gsf-label mb-2">Medlemmar</div>
-                        <h5 class="fw-bold gsf-navy mb-3">Ägarskifte eller ny adress?</h5>
-                        <p class="gsf-text small mb-3">
-                          Vid ägarbyte eller adressändring — kontakta kassören så att
-                          medlemsregistret hålls uppdaterat.
-                        </p>
-                        <a href="mailto:kassor@guldboda.se" class="gsf-blue" style="font-weight: 600;">
-                          kassor@guldboda.se →
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="gsf-card p-4 h-100">
-                        <div class="gsf-label mb-2">Slitageavgifter</div>
-                        <h5 class="fw-bold gsf-navy mb-3">Ska du bygga?</h5>
-                        <p class="gsf-text small mb-3">
-                          Vid byggnation som belastar vägarna tillkommer slitageavgifter.
-                          Kontakta vägansvarig i god tid innan arbetet påbörjas.
-                        </p>
-                        <a href="mailto:vagansvarig@guldboda.se" class="gsf-blue" style="font-weight: 600;">
-                          vagansvarig@guldboda.se →
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="gsf-card p-4 h-100">
-                        <div class="gsf-label mb-2">Styrelsen</div>
-                        <h5 class="fw-bold gsf-navy mb-3">Frågor och ärenden</h5>
-                        <p class="gsf-text small mb-3">
-                          Allmänna frågor besvaras av styrelsen. Vi strävar efter att
-                          svara inom några dagar.
-                        </p>
-                        <a href="mailto:styrelsen@guldboda.se" class="gsf-blue" style="font-weight: 600;">
-                          styrelsen@guldboda.se →
-                        </a>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </section>
-
-              <!-- CTA -->
-              <section class="gsf-bg py-5 text-center">
-                <div class="container">
-                  <h2 class="h4 fw-bold gsf-navy mb-2">Vill du nå styrelsen?</h2>
-                  <p class="gsf-text mb-4">Se kontaktuppgifter och roller för samtliga ledamöter.</p>
-                  <a href="/styrelsen" class="btn px-5 py-2"
-                     style="background: #192A3D; color: #FFFFFF; font-weight: 600; border-radius: 4px; border: none;">
-                    Styrelsen &amp; Kontakt
-                  </a>
                 </div>
               </section>
 

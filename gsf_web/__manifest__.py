@@ -4,6 +4,7 @@
     'version': '19.0.1.0.0',
     'summary': 'Startsida och styrelselista för Guldboda Samfällighetsförening',
     'author': 'Arvas International AB',
+    'website': 'https://github.com/FredrikArvas/guldboda_samfallighet/tree/19.0/gsf_web',
     'license': 'LGPL-3',
     'depends': [
         'website',

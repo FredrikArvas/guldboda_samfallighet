@@ -5,6 +5,7 @@
     'summary': 'Installationsprofil for Guldboda Samfallighet',
     'category': 'Hidden',
     'author': 'Fredrik Arvas / Arvas International AB',
+    'website': 'https://github.com/FredrikArvas/guldboda_samfallighet/tree/19.0/guldboda_samfallighet',
     'license': 'LGPL-3',
     'depends': [
         'partner_social_media',
